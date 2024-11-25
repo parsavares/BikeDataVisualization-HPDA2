@@ -51,4 +51,5 @@ This project is licensed under the MIT License.
 **Parsa Vares**  
 University of Luxembourg  
 High Performance Data Analytics (HPDA) Course - Assignment 2
+[Parsa.vares.001@student.uni.lu](mailto:parsa.vares.001@student.uni.lu)
 
