@@ -1,0 +1,55 @@
+/* Control Bar container styling */
+.control-bar {
+  padding: 10px 15px;
+  background-color: #e9ecef; /* Light gray for better visibility */
+  border-bottom: 2px solid #bbb;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* Attribute selection section styling */
+.attribute-selection {
+  display: flex;
+  justify-content: space-between; /* Adjust space for better layout */
+  flex-wrap: wrap; /* Allow wrap for better fitting on smaller screens */
+}
+
+/* Scatterplot and Histogram controls styling */
+.scatterplot-controls,
+.histogram-controls {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+/* Label styling */
+label {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+/* Dropdown (select) styling */
+select {
+  margin-bottom: 10px;
+  padding: 6px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+/* Reset button styling */
+.reset-button {
+  padding: 8px 20px;
+  background-color: #4682b4;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+  align-self: flex-end; /* Align button to the right for better visibility */
+}
+
+.reset-button:hover {
+  background-color: #316a8c;
+}

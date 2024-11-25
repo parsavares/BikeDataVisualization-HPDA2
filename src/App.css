@@ -1,0 +1,218 @@
+/* Root application container styling */
+.App {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100%;
+  overflow: visible; /* Prevent scrolling for cleaner visuals */
+}
+
+/* Header style for the application title */
+.App h1 {
+  font-size: 28px;
+  font-weight: bold;
+  color: #333;
+  margin: 20px 0; /* Space around the title for clear separation */
+}
+
+/* General container for visualizations */
+.visualization-container {
+  display: flex;
+  flex-direction: row;
+  flex-grow: 1;
+  padding: 1px;
+  gap: 1px; /* Space between scatterplot and histogram */
+  overflow: visible; /* Prevent unnecessary scroll */
+  height: calc(100% - 180px); /* Make visualizations fit within the remaining space */
+}
+
+/* Styling for scatterplot container */
+.scatterplot-container {
+  flex: 1; /* Occupy equal space */
+  height: 100%; /* Take full available height */
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  overflow: visible; /* Prevent unnecessary overflow */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for polished look */
+}
+
+/* Styling for histogram container */
+.histogram-container {
+  flex: 1; /* Occupy equal space */
+  height: 90%; /* Take full available height */
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  overflow: visible; /* Prevent unnecessary overflow */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for polished look */
+}
+
+/* Control bar styling to separate it from visualizations */
+.control-bar {
+  padding: 15px;
+  background-color: #e9ecef; /* Light gray background for visibility */
+  border-bottom: 3px solid #bbb;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* Attribute selection section within the control bar */
+.attribute-selection {
+  display: flex;
+  justify-content: space-around; /* Space out evenly for layout balance */
+  flex-wrap: wrap; /* Allow elements to wrap for smaller screens */
+  margin-bottom: 10px;
+}
+
+/* Scatterplot and histogram controls styling */
+.scatterplot-controls,
+.histogram-controls {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+/* Label styling */
+label {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+/* Select dropdown styling */
+select {
+  margin-bottom: 10px;
+  padding: 6px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+/* Styling for reset brush button */
+.reset-button {
+  padding: 10px 20px;
+  background-color: #4682b4; /* Blue color */
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+  align-self: center; /* Center the reset button for visual balance */
+}
+
+.reset-button:hover {
+  background-color: #316a8c; /* Darker blue shade on hover */
+}
+
+/* Tooltip styling for better user feedback */
+.tooltip {
+  position: absolute;
+  text-align: left;
+  padding: 8px;
+  background: rgba(0, 0, 0, 0.7); /* Semi-transparent black */
+  color: #fff;
+  border-radius: 4px;
+  pointer-events: none; /* Ignore pointer events */
+  font-size: 12px;
+  z-index: 10; /* Make sure it appears above other elements */
+}
+
+/* Axis labels in visualizations */
+.x-axis-label,
+.y-axis-label {
+  font-size: 14px;
+  font-weight: bold;
+  fill: #333; /* Dark color for readability */
+}
+
+/* Styling for axis paths and lines */
+.axis path,
+.axis line {
+  fill: none;
+  shape-rendering: crispEdges;
+  stroke: #333; /* Dark color for consistency */
+  stroke-width: 1.5;
+}
+
+/* Axis text styling */
+.axis text {
+  font-size: 12px;
+  font-family: Arial, sans-serif;
+  fill: #333; /* Dark color for better readability */
+}
+
+/* Brush styling to make it visually distinctive */
+.brush .selection {
+  fill: #ffa500; /* Orange color to indicate brushing area */
+  fill-opacity: 0.3; /* Semi-transparent for better contrast */
+  stroke: #ff4500; /* Red-orange color for brush edge */
+  stroke-width: 2;
+}
+
+.brush .handle {
+  fill: #ff4500; /* Distinct handle color for easy interaction */
+  stroke: #ff4500; /* Matches handle to selection border for consistency */
+  stroke-width: 1.5;
+}
+
+/* Scatterplot points styles */
+circle {
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+  opacity: 0.7; /* Default opacity for unselected points */
+  r: 2.5px; /* Smaller radius to make visualization less cluttered */
+}
+
+circle:hover {
+  stroke: #222;
+  stroke-width: 1.5;
+  opacity: 1; /* Full opacity on hover for visibility */
+}
+
+/* Legend container styling */
+.legend-container {
+  display: flex;
+  justify-content: center;
+  margin: 20px auto;
+  padding: 10px;
+  background-color: #f8f8f8;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+/* Each item in the legend */
+.legend-item {
+  display: flex;
+  align-items: center;
+  margin: 0 15px;
+}
+
+/* Legend color box styling */
+.legend-color {
+  width: 16px;
+  height: 16px;
+  margin-right: 8px;
+  border-radius: 4px;
+  border: 1px solid #333;
+}
+
+/* Responsive layout adjustments */
+@media (max-width: 768px) {
+  /* Stack visualizations vertically on small screens */
+  .visualization-container {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .scatterplot-container,
+  .histogram-container {
+    width: 100%;
+    height: 40vh; /* Set height to be 40% of viewport for better usability */
+  }
+
+  .control-bar {
+    padding: 10px;
+  }
+}

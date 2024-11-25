@@ -1,0 +1,44 @@
+/* Visualization container styling */
+.visDivContainer {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  /* Axis labels styling */
+  .x-axis-label,
+  .y-axis-label {
+    font-size: 14px;
+    font-weight: bold;
+    fill: #333;
+  }
+  
+  /* Brush selection styling */
+  .brush .selection {
+    fill: #ffa500; /* Orange for easy visibility */
+    fill-opacity: 0.3;
+    stroke: #ff4500;
+    stroke-width: 2;
+  }
+  
+  .brush .handle {
+    fill: #ff4500;
+    stroke: #ff4500;
+    stroke-width: 1.5;
+  }
+  
+  /* Data points in scatterplot/bar chart */
+  circle,
+  .rect {
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+    opacity: 0.7;
+  }
+  
+  circle:hover,
+  .rect:hover {
+    stroke: #222;
+    stroke-width: 1.5;
+    opacity: 1;
+  }
+  

@@ -1,0 +1,63 @@
+/* Scatterplot container styling */
+.scatterplot-container {
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  overflow: hidden;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Axis labels in the scatterplot */
+.x-axis-label,
+.y-axis-label {
+  font-size: 14px;
+  font-weight: bold;
+  fill: #333;
+}
+
+/* Axis paths and lines styling */
+.axis path,
+.axis line {
+  fill: none;
+  shape-rendering: crispEdges;
+  stroke: #333;
+  stroke-width: 1.5;
+}
+
+/* Axis text styling */
+.axis text {
+  font-size: 12px;
+  font-family: Arial, sans-serif;
+  fill: #333;
+}
+
+/* Brush selection styling */
+.brush .selection {
+  fill: #ffa500;
+  fill-opacity: 0.3;
+  stroke: #ff4500;
+  stroke-width: 2;
+}
+
+.brush .handle {
+  fill: #ff4500;
+  stroke: #ff4500;
+  stroke-width: 1.5;
+}
+
+/* Scatterplot circles styling */
+circle {
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+  opacity: 0.7; /* Reduced opacity for better distinction */
+  r: 3px; /* Small radius for better representation of large data sets */
+}
+
+circle:hover {
+  stroke: #222;
+  stroke-width: 1.5;
+  opacity: 1;
+}
