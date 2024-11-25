@@ -1,70 +1,54 @@
-# Getting Started with Create React App
+# Bike Data Visualization - HPDA Assignment 2
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project is part of the High Performance Data Analytics (HPDA) course at the University of Luxembourg. It provides interactive visualizations for bike-sharing data using React and D3.js.
 
-## Available Scripts
+## Overview
 
-In the project directory, you can run:
+The application contains two synchronized visualizations:
+- **Scatterplot** with 2D brushing to explore relationships between variables.
+- **Histogram** with a dynamic X-axis and static Y-axis representing frequency to explore data distributions.
 
-### `npm start`
+The visualizations are linked to highlight selected data in both views simultaneously, making it easy to perform detailed data exploration.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Features
+- **Interactive Brushing**: Select data points in the scatterplot or histogram, with the selection automatically linked to the other visualization.
+- **Dynamic Attribute Selection**: Choose different attributes for X and Y axes in the scatterplot, and for the histogram's X-axis.
+- **Reset Brush Selection**: Easily reset any selections to explore new insights.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Installation
 
-### `npm test`
+To run the project locally, follow these steps:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+1. Clone the repository:
+    ```bash
+    git clone https://github.com/parsavares/BikeDataVisualization-HPDA2.git
+    ```
+2. Install dependencies:
+    ```bash
+    npm install
+    ```
+3. Run the application:
+    ```bash
+    npm start
+    ```
 
-### `npm run build`
+## Technology Stack
+- **React**: Frontend framework for building reusable UI components.
+- **D3.js**: JavaScript library for producing dynamic, interactive data visualizations.
+- **Redux**: State management for synchronized visualization interactions.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Usage
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- **Scatterplot**: Select attributes to visualize their correlation and use the brush to focus on specific data ranges.
+- **Histogram**: View the frequency distribution of a selected attribute and link it to the scatterplot.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## License
 
-### `npm run eject`
+This project is licensed under the MIT License.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Author
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+**Parsa Vares**  
+University of Luxembourg  
+High Performance Data Analytics (HPDA) Course - Assignment 2
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
