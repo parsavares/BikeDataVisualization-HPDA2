@@ -42,6 +42,9 @@ To run the project locally, follow these steps:
 - **Scatterplot**: Select attributes to visualize their correlation and use the brush to focus on specific data ranges.
 - **Histogram**: View the frequency distribution of a selected attribute and link it to the scatterplot.
 
+## TODO:
+- Non numerical attributes mapping on the brush needs to be fixed from just Histogram to Scatterplot side.
+
 ## License
 
 This project is licensed under the MIT License.
