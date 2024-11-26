@@ -1,4 +1,4 @@
-# Bike Data Visualization - HPDA Assignment 2
+# Bike Data Visualization - HPDA Project 2nd
 
 ![GIT-DEMO](https://github.com/user-attachments/assets/6cc73cc1-c769-4785-88a3-b28ac9969f11)
 
