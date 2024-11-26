@@ -1,5 +1,7 @@
 # Bike Data Visualization - HPDA Assignment 2
 
+![GIT-DEMO](https://github.com/user-attachments/assets/6cc73cc1-c769-4785-88a3-b28ac9969f11)
+
 This project is part of the High Performance Data Analytics (HPDA) course at the University of Luxembourg. It provides interactive visualizations for bike-sharing data using React and D3.js.
 
 ## Overview
